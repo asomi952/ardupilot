@@ -470,7 +470,7 @@ public:
 #endif
 
     AP_Int16                rc_speed; // speed of fast RC Channels in Hz
-
+    AP_Int8 new_parameter;
 #if MODE_ACRO_ENABLED || MODE_SPORT_ENABLED
     // Acro parameters
     AP_Float                acro_balance_roll;
@@ -507,7 +507,7 @@ public:
     // ParametersG2 can be created with a relatively easy syntax in
     // the face of many #ifs:
     uint8_t unused_integer;
-    AP_Int8 new_parameter;
+    
     // button checking
 #if HAL_BUTTON_ENABLED
     AP_Button *button_ptr;
