@@ -396,7 +396,7 @@ public:
     AP_Float        throttle_filt;
     AP_Int16        throttle_behavior;
     AP_Float        pilot_takeoff_alt_cm;
-
+    AP_Int26        new_parameter;
 #if MODE_RTL_ENABLED
     AP_Int32        rtl_altitude_cm;
     AP_Int16        rtl_speed_cms;
