@@ -384,9 +384,11 @@ public:
         k_param__gcs,
         k_param_throw_altitude_descend,
         k_param_throw_altitude_ascend,
-
+        
         // the k_param_* space is 9-bits in size
         // 511: reserved
+        k_param_new_parameter,
+    
     };
 
     AP_Int16        format_version;
@@ -404,7 +406,7 @@ public:
     AP_Int32        rtl_loiter_time;
     AP_Enum<ModeRTL::RTLAltType> rtl_alt_type;
 #endif
-
+    AP_Int8         new_patameter;
     AP_Int8         failsafe_gcs;               // ground station failsafe behavior
     AP_Int16        gps_hdop_good;              // GPS Hdop value at or below this value represent a good position
 
