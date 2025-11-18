@@ -507,7 +507,7 @@ public:
     // ParametersG2 can be created with a relatively easy syntax in
     // the face of many #ifs:
     uint8_t unused_integer;
-
+    AP_Int8 new_parameter;
     // button checking
 #if HAL_BUTTON_ENABLED
     AP_Button *button_ptr;
